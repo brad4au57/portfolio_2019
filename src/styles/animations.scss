@@ -1,0 +1,51 @@
+@import 'colors.scss';
+
+/***   CSS ANIMATIONS   ***/
+.slide-out-left {
+	animation: slide-out-left 3s ease-in forwards;
+}
+
+.slide-in-left {
+	animation: slide-in-left 2s ease-out forwards;
+}
+
+.slide-out-right {
+	overflow-x: hidden;
+	animation: slide-out-right 3s ease-in forwards;
+}
+
+.slide-in-right {
+	animation: slide-in-right 2s ease-out forwards;
+}
+
+
+/***  Keyframes ***/
+@keyframes slide-out-left {
+	0%   { transform: translate( 0%, 0)}
+  100% { transform: translate( -1000%, 0)}
+}
+
+@keyframes slide-in-left {
+	0%   { transform: translate( 1000%, 0)}
+  100% { transform: translate( 0%, 0)}
+}
+
+@keyframes slide-out-right {
+	0%   { transform: translate( 0%, 0)}
+  100% { transform: translate( 1000%, 0)}
+}
+
+@keyframes slide-in-right {
+	0%   { transform: translate( -1000%, 0)}
+  100% { transform: translate( 0%, 0)}
+}
+
+@keyframes dark-blue {
+	0%   { background-color: $blue }
+  100% { background-color: $dark-blue}
+}
+
+@keyframes dark-red {
+	0%   { background-color: $red }
+  100% { background-color: $dark-red}
+}
